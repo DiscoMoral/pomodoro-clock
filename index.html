@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodoro-clock</title>
+  <!-- Bootstap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" 
+  rel="stylesheet" 
+  integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" 
+  crossorigin="anonymous">
+  <!-- Accordion -->
+  <link rel="stylesheet" href="libs/accordion.min.css">
+  <!-- My styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="main">
+    <div class="main__container container">
+      <h1 class="main__title">Hello, this is <span>Pomodoro</span> clock</h1>
+
+      <div class="main__data">
+        <div class="main__pomodoro">
+          <img class="main__image" src="img/tomato.png" alt="#">
+          <div class="display__tomatos" id="displayTomatos"></div>
+        </div>
+        <div class="timer" id="timer"></div>
+      </div>
+      <div class="main__title-numbers">Choose the time</div>
+      <div class="put__min" id="putMin">
+        <button class="put__button put__5" id="5">5</button>
+        <button class="put__button put__10" id="10">10</button>
+        <button class="put__button put__15" id="15">15</button>
+        <button class="put__button put__20" id="20">20</button>
+        <button class="put__button put__25" id="25">25</button>
+        <button class="put__button put__30" id="30">30</button>
+      </div>
+
+      <div class="buttons">
+        <button class="start button" id="startButton">Start</button>
+        <button class="reset button" id="resetButton">Reset</button>
+      </div>
+      
+      <div class="accordion-container">
+        <div class="ac">
+          <h2 class="ac-header">
+            <button type="button" class="ac-trigger">Some theory</button>
+          </h2>
+          <div class="ac-panel">
+            <p class="ac-text">
+              The Pomodoro technique is a tool that allows you to allocate your time wisely.
+              You set an interval during which you will work hard on the task without distractions. 
+              After working, we take a break for five minutes. You can take breaks for longer periods of time, 
+              but then you need to increase the working time.
+              The Pomodoro technique was created by Francesco Cirillo. 
+              In his student days, he used a kitchen timer in the shape of a tomato to organize his learning process. 
+              He experimented with different time intervals. In the end, he found the 25/5 time to be the most optimal.
+            </p>
+            <p class="ac-text">
+              Pomodoro will help you to concentrate better on tasks, save your time and not give you a chance to take a break. 
+              In the process, you will not have the opportunity to be lazy and switch to other things. Concentration and focus 
+            </p>
+            <p class="ac-text">
+              What does the Pomodoro Technique include?
+              The Pomodoro Technique can also help people develop better work habits. 
+              Through effective time management, they will be able to accomplish more in less time, 
+              while gaining a sense of satisfaction and reducing the likelihood of burnout. To accomplish this, 
+              the Pomodoro Technique includes five step-by-step processes to help develop a conscious and productive relationship with time:
+              <ul class="pomodoro__list">
+                <li class="pomorodo__item">
+                  The Internal Pomodoro Process. Developing an effective relationship with time to increase productivity.
+                </li>
+                <li class="pomorodo__item">
+                  Core Pomodoro Process. Focus on tasks to accomplish goals with less effort.
+                </li>
+                <li class="pomorodo__item">
+                  Daily Pomodoro Process. Establish a daily routine, improve your daily workflow, and accomplish multiple tasks more efficiently.
+                </li>
+                <li class="pomorodo__item">
+                  Weekly Pomodoro Process. Set up a weekly routine, organize your time more efficiently, and accomplish multiple goals.
+                </li>
+                <li class="pomorodo__item">
+                  Team Pomodoro Process. Learn how to adapt the Pomodoro technique to work as a team.
+                </li>
+              </ul>
+            </p>
+          </div>
+        </div>
+        <div class="ac">
+          <h2 class="ac-header">
+            <button type="button" class="ac-trigger">How to use</button>
+          </h2>
+          <div class="ac-panel">
+            <p class="ac-text">
+              <ul class="pomodoro__list">
+                <li class="pomorodo__item">
+                  Select a task for the current pomodoro.
+                </li>
+                <li class="pomorodo__item">
+                  Set a timer for 25 minutes.
+                </li>
+                <li class="pomorodo__item">
+                  Work on the task until the timer goes off, then commit to completing the pomodoro.
+                </li>
+                <li class="pomorodo__item">
+                  Take a short break: start with five minutes, but know that it can be as short as two minutes.
+                </li>
+                <li class="pomorodo__item">
+                  After four pomodoro, take a longer break - usually 15-30 minutes.
+                </li>
+                <li class="pomorodo__item">
+                  For each pomodoro, set aside time for debriefing and review to transition smoothly from one pomodoro to the next.
+                </li>
+                <li class="pomorodo__item">
+                  More importantly, take all necessary steps to keep your mind on your work during the pomodoro and not interrupt it. 
+                </li>
+                <li class="pomorodo__item">
+                  You need to protect your pomodoro from both internal and external distractions. Avoid checking emails, social media accounts, 
+                  weather forecasts, news and any other distractions that can take your attention away from the task at hand.
+                </li>
+                <li class="pomorodo__item">
+                  Different implementations of the Pomodoro technique use different time slots for task segments and breaks.
+                </li>
+                <li class="pomorodo__item">
+                  For breaks, it is highly recommended to choose an activity that contrasts with the task. For example, 
+                  a person working at a computer should step away from the desk and engage in some type of physical activity.
+                </li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <script defer src="libs/accordion.min.js"></script>
+  <script defer src="script.js"></script>
+</body>
+</html>
